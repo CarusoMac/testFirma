@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caruso</title>
+  <!-- FAVICON clipartmac.com  png-->
+  <!-- <link rel="icon" type="image/png" href="images/NicePng_m-png_74222.png" /> -->
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="mybootstrap.css" />
+  <!-- custom style -->
+  <link rel="stylesheet" href="stylepro2.css" />
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/48bcdfec48.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+  <!-- Banner -->
+  <span id="home"></span>
+  <section class="banner-wrapper">
+    <nav class="navbar navbar-expand-lg row p-2 nav-main">
+      <div class="container-fluid">
+        <!-- <span class="navbar-brand m-0 p-0">
+            <img
+              src="images/NicePng_m-png_74222.png"
+              class="logo d-inline"
+              alt="logo"
+            />
+          </span> -->
+        <span class="hotelName m-0 p-0">Mega. sro</span>
+        <!-- <a href="tel: +420456789123" class="phoneNumber"
+            ><i class="fa-solid fa-phone"></i> +420 456 789 123</a
+          >
+          <a
+            href="mailto: johndoe@test.xx"
+            class="phoneNumber d-none d-lg-inline"
+            ><i class="fa-solid fa-envelope"></i> megacompany@test.xx</a
+          > -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav menu-navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Domů</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about">O firmě</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#scope">Co děláme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#price">Cenik</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="section-spacing"></div>
+    <div class="container text-center title-area rounded-3" style="background-color: rgba(201, 183, 120, 0.8)">
+      <div class="row">
+        <h1 class="col-12">Mega Company s.r.o.</h1>
+      </div>
+      <div class="row">
+        <h2 class="col-12">The mega company for your life</h2>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="main-btn" data-bs-toggle="modal" data-bs-target="#megaCompanyModal" id="modalBtn">
+        modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="megaCompanyModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Cookies</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Naše stránky a naši partneři používají soubory cookie k měření
+              návštěvnosti našich stránek, k poskytování obsahu nebo
+              přizpůsobené reklamy, k zanechání vašeho názoru na naše služby
+              nebo ke sdílení obsahu na vašich sociálních sítích.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Zavrit
+              </button>
+              <button type="button" class="main-btn">
+                Dozvedet se vice
+                <i class="fa-solid fa-face-smile"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O nás -->
+  <div id="about" class="section-spacing"></div>
+  <section class="about-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>Příběh naší společnosti</h6>
+          <h3>O Mega company</h3>
+        </div>
+      </div>
+      <div class="row col-sm-12 text-center mb-2 d-flex align-items-start justify-content-around">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade col-lg-8 col-md-12 mb-2">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/bannerimg.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="m-0">First slide label</h5>
+                <p class="m-0">
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide1.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="m-0">First slide label</h5>
+                <p class="m-0">
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/MfkBGSz.webp" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="m-0">First slide label</h5>
+                <p class="m-0">
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Lorem ipsum dolor sit.</h4>
+
+          <p>
+            voluptatum accusantium,
+            <span class="about-span" data-bs-toggle="tooltip" data-bs-title="Default tooltip"
+              title="Default tooltip">placeat officiis</span>
+            debitis suscipit! Odit, deleniti delectus, exercitationem enim
+            cupiditate, sunt ducimus
+            <span class="about-span">exercitationem</span> natus qui
+            perspiciatis vitae. Obcaecati doloremque deserunt vel quidem
+            similique! Optio eligendi molestias magnam nemo
+            <span class="about-span">dignissimos</span>
+            provident fuga tempore iusto officia nisi?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- co delame -->
+  <div id="scope" class="section-spacing"></div>
+  <section class="scope-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>s cim vsim vam muzeme pomoci</h6>
+          <h3>Co delame</h3>
+        </div>
+      </div>
+      <div class="row col-sm-12 text-center mb-2 align-items-start justify-content-around gx-1">
+        <div class="col-lg-4 col-md-6 row">
+          <img class="col d-none d-lg-block d-md-block" src="images/MfkBGSz.webp" alt="about" width="300px" />
+          <p class="col">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis dolore ea consequuntur eum culpa natus error libero
+            ut dicta quis? Molestias excepturi in dicta. Corporis rerum
+            laudantium natus nesciunt architecto omnis amet est laboriosam
+            voluptatum. Non, neque impedit provident nostrum obcaecati quasi
+            delectus inventore enim laborum recusandae. Praesentium, odit
+            distinctio!
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 row">
+          <img class="col d-none d-lg-block d-md-block" src="images/MfkBGSz.webp" alt="about" width="300px" />
+          <p class="col">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis dolore ea consequuntur eum culpa natus error libero
+            ut dicta quis? Molestias excepturi in dicta. Corporis rerum
+            laudantium natus nesciunt architecto omnis amet est laboriosam
+            voluptatum. Non, neque impedit provident nostrum obcaecati quasi
+            delectus inventore enim laborum recusandae. Praesentium, odit
+            distinctio!
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 row">
+          <img class="col d-none d-lg-block d-md-block" src="images/MfkBGSz.webp" alt="about" width="300px" />
+          <p class="col">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Perspiciatis dolore ea consequuntur eum culpa natus error libero
+            ut dicta quis? Molestias excepturi in dicta. Corporis rerum
+            laudantium natus nesciunt architecto omnis amet est laboriosam
+            voluptatum. Non, neque impedit provident nostrum obcaecati quasi
+            delectus inventore enim laborum recusandae. Praesentium, odit
+            distinctio!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cenik -->
+  <div id="price" class="section-spacing"></div>
+  <section class="price-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>s malym budgetem dokazeme zazraky</h6>
+          <h3>Cenik nasich sluzeb</h3>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          4.sekce: ceník služeb pomocí bootstrapové tabulky - viz BS
+          dokumentace (content-tables) - vhodně ostylované o velikosti
+          minimálně 3*4 buněk.
+        </p>
+      </div>
+      <table class="table justify-self-center">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Sluzba</th>
+            <th scope="col">Info</th>
+            <th scope="col">Cena</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>sluzba 1</td>
+            <td>info1</td>
+            <td>1500 Kc</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>sluzba 2</td>
+            <td>info1</td>
+            <td>1500 Kc</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>sluzba 3</td>
+            <td>info1</td>
+            <td>1500 Kc</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Kontakty -->
+  <div id="contact" class="section-spacing"></div>
+  <section class="footer_wrapper mt-3 mt-md-0 pb-0">
+    <div class="container pb-3">
+      <div class="row">
+        <div class="col-sm-12 section-title text-center mb-5">
+          <h6>spojte se s nami</h6>
+          <h3>Kontakty</h3>
+        </div>
+      </div>
+      <div class="row">
+        <p>
+          5.sekce: kontakty + patička - vlevo kontaktní údaje (adresa, mail,
+          telefon, atd) kde budou nějak použity ikonky z fontawesome (nebo
+          nějaké jiné banky), vpravo gůgl mapa. Pod tím jednoduchý kontaktní
+          formulář a ještě pod nim jednoduché menu - nav (podobně jak jsme to
+          měli v projektu)
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6">
+          <h5>Adresa spolecnosti</h5>
+          <p class="ps-0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            dignissim erat ut laoreet pharetra....
+          </p>
+          <div class="contact-info">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><i class="fa fa-home me-3 phoneNumber"></i> 17. listopadu
+                  2172/15, Ostrava-Poruba</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-phone me-3 phoneNumber"></i>+420 456 789
+                  123</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope me-3 phoneNumber"></i>megacompany@test.xx</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mapouter col-lg-6 col-md-6">
+          <iframe width="100%" height="100%" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=17.listopadu%20ostrava&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+      </div>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Jmeno</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Prijmeni</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">email</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+              required />
+            <div class="invalid-feedback">Please choose a username.</div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="customerMsg"></label>
+          <textarea name="customerMsg" id="customerMsg" cols="30" rows="10" class="form-control">
+Vase zprava</textarea>
+        </div>
+
+        <div class="col-12">
+          <button class="btn main-btn" type="submit">odeslat</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer-wrapper mt-3 mt-md-0 pb-0">
+    <div class="container pb-3">
+      <div class="row justify-content-center">
+        <div class="col footOdkaz text-center"><a>Odkaz 1</a></div>
+        <div class="col footOdkaz text-center"><a>Odkaz 1</a></div>
+        <div class="col footOdkaz text-center"><a>Odkaz 1</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    $(window).on("load", function () {
+      $("#megaCompanyModal").modal("show");
+    });
+  </script>
+
+  <!-- custom script -->
+  <script src="scriptpro2.js"></script>
+</body>
+
+</html>
